@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  background-color: #A9DBFF;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #3DA5FF, #1E7FE6);
+  border-radius: 50%;
+  top: 30%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+body::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #3DA5FF, #1E7FE6);
+  border-radius: 50%;
+  top: 73%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+}
+
+.container{
+  height:600px;
+  width:350px;
+  background-color:rgb(37, 37, 37);
+  position:relative;
+  left:600px;
+  top:50px;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.area{
+  height:170px;
+  width:350px;
+}
+.operation{
+  position: absolute;
+  top:60px;
+  left:10px;
+  height:45px;
+  width:330px;
+  color:#f0efef;
+  text-align: right;
+  font-size: 25px;
+  overflow-x: auto;
+  white-space: nowrap;
+  /* background-color: red; */
+
+}
+.operation .op{
+  color: #1E7FE6;
+}
+.answer{
+  position: absolute;
+  right: 10px;
+  top: 100px;
+  height: 50px;
+  width:330px;
+  color:white;
+  text-align: right;
+  font-size: 40px;
+  overflow-x: auto;
+  white-space: nowrap;
+  overflow-y: hidden;
+  /* background-color: blue; */
+  
+}
+
+button h3 {
+  margin: 0;
+}
+
+.buttons{
+  height:420px;
+  width:350px;
+}
+.button1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+}
+.sqrt , .x2 , .sin , .reciprocal{
+  height: 40px;
+  width: 70px;
+  border-radius: 20px;
+  border :none;
+  background-color: #4e4e4e;
+  color: #4f9eff;
+}
+.button2{
+  display: flex;
+  justify-content: center;
+  gap:22px;
+  position: relative;
+  top:10px;
+  
+}
+.ac{
+  left:23px;
+  height:65px;
+  width:60px;
+  background-color:rgb(157, 156, 156);
+  border:none;
+  color:#f0efef;
+  border-radius: 9px;
+}
+.delete {
+  left:20px;
+  top:20px;
+  height:65px;
+  width:60px;
+  background-color:rgb(157, 156, 156);
+  border:none;
+  color:#f0efef;
+  border-radius: 9px;
+}
+
+.division{
+  left:18px;
+  height:65px;
+  width:60px;
+  border:none;
+  background-color: #0D6EBC;
+  color: #FFFFFF;
+  border-radius: 9px;
+}
+.multiply{
+  left:14px;
+  height:65px;
+  width:60px;
+  border:none;
+  background-color: #0D6EBC;
+  color: #FFFFFF;
+  border-radius: 9px;
+}
+.button3{
+  display: flex;
+  justify-content: center;
+  gap:22px;
+  position: relative;
+  top:20px;
+}
+.seven{
+  left:20px;
+  height:65px;
+  width:60px;
+  background-color: #4e4e4e;
+  color: #4f9eff;
+  border: none;
+  border-radius: 9px;
+}
+.eight{
+  left:20px;
+  height:65px;
+  width:60px;
+  background-color: #4e4e4e;
+  color: #4f9eff;
+  border: none;
+  border-radius: 9px;
+}
+.nine{
+  left:20px;
+  height:65px;
+  width:60px;
+  background-color: #4e4e4e;
+  color: #4f9eff;
+  border: none;
+  border-radius: 9px;
+}
+.minus{
+  left:20px;
+  height:65px;
+  width:60px;
+  border:none;
+  background-color: #0D6EBC;
+  color: #FFFFFF;
+  border-radius: 9px;
+}
+.button4{
+  height:65px;
+  width:250px;
+  display: flex;
+  justify-content: center;
+  gap:22px;
+  position: relative;
+  top:30px;
+  padding-left: 18px;
+}
+.four{
+  left:20px;
+  height:65px;
+  width:60px;
+  background-color: #4e4e4e;
+  color: #4f9eff;
+  border: none;
+  border-radius: 9px;
+}
+.five{
+  left:20px;
+  height:65px;
+  width:60px;
+  background-color: #4e4e4e;
+  color: #4f9eff;
+  border: none;
+  border-radius: 9px;
+}
+.six{
+  left:20px;
+  height:65px;
+  width:60px;
+  background-color: #4e4e4e;
+  color: #4f9eff;
+  border: none;
+  border-radius: 9px;
+}
+.button5{
+  height:100px;
+  width:60px;
+  position: relative;
+  left:260px;
+  bottom:35px;
+  padding-left: 7px; 
+}
+.plus{
+  height:100px;
+  width:60px;
+  border:none;
+  background-color: #0D6EBC;
+  color: #FFFFFF;
+  border-radius: 9px;
+}
+.button6{
+  height:65px;
+  width:250px;
+  display: flex;
+  justify-content: center;
+  gap:22px;
+  position: relative;
+  bottom:56px;
+  padding-left: 18px;
+}
+.one , .two , .three{
+  left:20px;
+  height:65px;
+  width:60px;
+  background-color: #4e4e4e;
+  color: #4f9eff;
+  border: none;
+  border-radius: 9px;
+}
+.button7{
+  height:95px;
+  width:60px;
+  position: relative;
+  left:260px;
+  bottom:88px;
+  padding-left: 7px;
+}
+.equal{
+  height:102px;
+  width:60px;
+  background-color: #0D6EBC;
+  color: #FFFFFF;
+  border:none;
+  border-radius: 9px;
+}
+.button8{
+  height: 60px;
+  width:145px;
+  position: relative;
+  bottom: 140px;
+  left:20px;
+}
+.zero{
+  height:60px;
+  width:145px;
+  border:none;
+  border-radius:9px;
+  background-color: #4e4e4e;
+  color: #4f9eff;
+}
+.button9{
+  height: 60px;
+  width:60px;
+  position: relative;
+  bottom: 200px;
+  left:186px;
+}
+.dot{
+  height:60px;
+  width:60px;
+  background-color: #4e4e4e;
+  color: #4f9eff;
+  border: none;
+  border-radius: 9px;
+}  
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover,
+.nine:hover, .zero:hover, .dot:hover, .c:hover, .x2:hover, .sin:hover, .reciprocal:hover{
+  background-color: #f0efef;
+}
+.division:hover,.multiply:hover,.minus:hover,.plus:hover,.equal:hover{
+  background-color: #a5a8ac;
+}
+.ac:hover, .delete:hover{
+  background-color: #3185c6;
+}
