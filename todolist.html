@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="todolist.css" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="stick">
+            <span class="todo">TO DO LIST</span>
+            <div class="line"></div>
+            <div class="input">
+                <input class="input-task" type="text" placeholder="add new task">
+            </div>
+            <div class="select-priority">
+                <label for="priority">Select Priority:</label>
+
+                <select id="priority">
+                    <option value="" disabled selected>Select priority</option>
+                    <option value="high" class="hightask">High priority</option>
+                    <option value="medium" class="mediumtask">Medium priority</option>
+                    <option value="low" class="lowtask">Low priority</option>
+                </select>
+            </div>
+
+            <div class="task-icon"><i class="fa-solid fa-list-check task-icon"></i>
+                <div class="task-text">Tasks</div>
+            </div>
+            <div class="task-priority">
+                <span class="high">High priority</span>
+                <span class="medium">Medium priority</span>
+                <span class="low">Low priority</span>
+
+            </div>
+            <button class="add">Add</button>
+        </div>
+
+        <div class="tasks">
+            <div class="high-priority"></div>
+            <div class="medium-priority"></div>
+            <div class="low-priority"></div>
+
+        </div>
+        <script src="todolist.js"></script>
+</body>
+
+</html>
